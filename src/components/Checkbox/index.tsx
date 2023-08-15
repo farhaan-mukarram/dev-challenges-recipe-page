@@ -10,12 +10,12 @@ const Checkbox: FunctionComponent<Props> = ({ id, label }) => {
     <div className="flex space-x-2 lg:space-x-4">
       <input
         type="checkbox"
-        className="w-5 h-5 rounded-[0.25rem] checked:accent-primary"
+        className="min-w-[1.25rem] min-h-[1.25rem] rounded-[0.25rem] checked:accent-primary"
       />
       <label
         htmlFor={id}
         dangerouslySetInnerHTML={{ __html: label }}
-        className="[&>em]:font-bold [&>em]:not-italic [&>i]:font-medium [&>i]:italic"
+        className="[&>em]:font-bold [&>em]:not-italic [&>i]:font-medium [&>i]:italic text-base"
       ></label>
     </div>
   );

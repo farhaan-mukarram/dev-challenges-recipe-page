@@ -25,29 +25,25 @@ const ingredients = [
 
 const IngredientsSection = () => {
   return (
-    <section>
-      {ingredients.map(({ item, ingredients }) => (
-        <section key={item}>
-          <h3>{item}</h3>
-          <section>
-            {ingredients.map((ing, idx) => (
-              <Checkbox
-                key={idx}
-                id={`${item}-ingredient-${idx + 1}`}
-                label={ing}
-              />
-            ))}
-          </section>
-        </section>
-      ))}
-      {/* <h2>Ingredients</h2>
-      <section>
-        <h3>Graham Cracker Crust</h3>
-      </section>
+    <section className="flex flex-col space-y-8">
+      <h2 className="text-2xl font-bold font-playfair-display">Ingredients</h2>
 
-      <section>
-        <h3>Cheesecake</h3>
-      </section> */}
+      <div className="flex flex-col space-y-7">
+        {ingredients.map(({ item, ingredients }) => (
+          <section key={item} className="flex flex-col space-y-6">
+            <h3 className="text-lg italic font-playfair-display">{item}</h3>
+            <section className="flex flex-col space-y-2">
+              {ingredients.map((ing, idx) => (
+                <Checkbox
+                  key={idx}
+                  id={`${item}-ingredient-${idx + 1}`}
+                  label={ing}
+                />
+              ))}
+            </section>
+          </section>
+        ))}
+      </div>
     </section>
   );
 };
