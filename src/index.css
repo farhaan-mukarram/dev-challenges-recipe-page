@@ -12,3 +12,29 @@
     font-weight: 400;
   }
 }
+
+@layer components {
+  .styled-instructions-list {
+    counter-reset: custom-counter;
+    list-style: none;
+  }
+
+  .styled-instructions-list li {
+    counter-increment: custom-counter;
+  }
+
+  .styled-instructions-list li::before {
+    display: inline-block;
+    content: counter(custom-counter);
+    background-color: var(--primary-color);
+    margin-right: 1rem;
+    height: 2.25rem;
+    width: 2.25rem;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 0.375rem;
+  }
+}

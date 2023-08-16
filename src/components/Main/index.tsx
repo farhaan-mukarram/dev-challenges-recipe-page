@@ -7,7 +7,7 @@ const Main = () => {
     <main className="flex flex-col min-h-screen space-y-12">
       <Header />
 
-      <div>
+      <div className="flex flex-col space-y-7">
         <IngredientsSection />
         <InstructionsSection />
       </div>
