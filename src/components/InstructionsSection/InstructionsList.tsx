@@ -8,11 +8,15 @@ interface Props {
 
 const InstructionsList: FunctionComponent<Props> = ({ instructions }) => {
   return (
-    <ol className="flex flex-col space-y-9 styled-instructions-list">
-      {instructions.map((instruction) => (
-        <InstructionsListItem instruction={instruction} key={instruction} />
+    <div className="flex flex-col space-y-9 styled-instructions-list">
+      {instructions.map((instruction, idx) => (
+        <InstructionsListItem
+          instruction={instruction}
+          key={instruction}
+          number={idx + 1}
+        />
       ))}
-    </ol>
+    </div>
   );
 };
 
