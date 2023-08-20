@@ -17,7 +17,7 @@ const index = () => {
         <a
           href="https://devchallenges.io/"
           target="_blank"
-          rel="noopener noasdasdaasdreferrer"
+          rel="noopener noreferrer"
           className="hover:underline"
         >
           devChallenges.io
