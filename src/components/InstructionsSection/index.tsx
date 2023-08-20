@@ -18,6 +18,10 @@ const InstructionsSection = () => {
       </h2>
 
       <InstructionsList instructions={instructions} />
+
+      <p className="text-xs lg:text-base italic text-[#BDBDBD] lg:mt-14 mt-7">
+        Source: https://sallysbakingaddiction.com/classic-cheesecake/
+      </p>
     </section>
   );
 };
