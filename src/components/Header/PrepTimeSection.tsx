@@ -5,22 +5,26 @@ const PrepTimeSection = () => {
   const cardItems = [
     {
       imgSrc: spoonKnifeCrossed,
+      alt: "image of a spoon and knife crossed",
       heading: "yields",
       description: "12 servings",
       descriptionTextColor: "text-primary",
     },
     {
       imgSrc: clock,
+      alt: "image of an analog clock",
       heading: "prep time",
       description: "45 minutes",
     },
     {
       imgSrc: clock,
+      alt: "image of an analog clock",
       heading: "cook time",
       description: "1 hour",
     },
     {
       imgSrc: clock,
+      alt: "image of an analog clock",
       heading: "total time",
       description: "7.75 hours",
     },
@@ -34,12 +38,13 @@ const PrepTimeSection = () => {
           heading,
           description,
           descriptionTextColor = "text-[#333333]",
+          alt,
         }) => (
           <div
             className="flex space-x-1 [&:first-of-type]:basis-full items-center"
             key={heading}
           >
-            <img src={imgSrc} alt="" className="w-4 h-4 md:h-6 md:w-6" />
+            <img src={imgSrc} alt={alt} className="w-4 h-4 md:h-6 md:w-6" />
 
             <div className="flex flex-col">
               <h4 className="uppercase text-[#BDBDBD] font-bold text-[0.5rem] md:text-[0.625rem]">
