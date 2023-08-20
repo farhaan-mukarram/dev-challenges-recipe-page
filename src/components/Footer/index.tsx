@@ -1,6 +1,6 @@
 const index = () => {
   return (
-    <footer className="mt-24 mb-6 font-montserrat">
+    <footer className="mt-24 mb-6 text-sm font-montserrat">
       <p className="font-medium text-center text-[#BDBDBD]">
         created by{" "}
         <span className="font-bold">
