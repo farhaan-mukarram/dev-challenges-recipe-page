@@ -27,15 +27,17 @@ const ingredients = [
 const IngredientsSection = () => {
   return (
     <section className="flex justify-between">
-      <div className="flex flex-col space-y-8 basis-[55%]">
-        <h2 className="text-2xl font-bold font-playfair-display">
+      <div className="flex flex-col space-y-3 lg:space-y-8 basis-full lg:basis-[55%]">
+        <h2 className="text-lg font-bold lg:text-2xl font-playfair-display">
           Ingredients
         </h2>
 
-        <div className="flex flex-col space-y-7">
+        <div className="flex flex-col space-y-8">
           {ingredients.map(({ item, ingredients }) => (
             <section key={item} className="flex flex-col space-y-6">
-              <h3 className="text-lg italic font-playfair-display">{item}</h3>
+              <h3 className="text-base italic lg:text-lg font-playfair-display">
+                {item}
+              </h3>
               <section className="flex flex-col space-y-2">
                 {ingredients.map((ing, idx) => (
                   <Checkbox

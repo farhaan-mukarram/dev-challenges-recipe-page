@@ -13,7 +13,9 @@ const instructions = [
 const InstructionsSection = () => {
   return (
     <section className="flex flex-col space-y-7">
-      <h2 className="text-2xl font-bold font-playfair-display">Instructions</h2>
+      <h2 className="text-lg font-bold lg:text-2xl font-playfair-display">
+        Instructions
+      </h2>
 
       <InstructionsList instructions={instructions} />
     </section>

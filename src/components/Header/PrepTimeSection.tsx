@@ -1,7 +1,7 @@
 import spoonKnifeCrossed from "../../assets/icons/spoonKnifeCrossed.svg";
 import clock from "../../assets/icons/clock.svg";
 
-const PrepTimeCard = () => {
+const PrepTimeSection = () => {
   const cardItems = [
     {
       imgSrc: spoonKnifeCrossed,
@@ -27,7 +27,7 @@ const PrepTimeCard = () => {
   ];
 
   return (
-    <div className="lg:flex flex-col px-11 py-14 space-y-11 basis-[55%] max-w-[13.5rem] rounded-xl shadow-[0_0_20px_0_rgba(0,0,0,0.1)] h-max hidden">
+    <div className="flex flex-wrap lg:hidden [&:first-child]:basis-full justify-between gap-y-5">
       {cardItems.map(
         ({
           imgSrc,
@@ -35,14 +35,19 @@ const PrepTimeCard = () => {
           description,
           descriptionTextColor = "text-[#333333]",
         }) => (
-          <div className="flex space-x-3" key={heading}>
-            <img src={imgSrc} alt="" className="w-8 h-8" />
+          <div
+            className="flex space-x-1 [&:first-of-type]:basis-full items-center"
+            key={heading}
+          >
+            <img src={imgSrc} alt="" className="w-4 h-4" />
 
             <div className="flex flex-col">
-              <h4 className="uppercase text-[#BDBDBD] font-bold text-[0.625rem]">
+              <h4 className="uppercase text-[#BDBDBD] font-bold text-[0.5rem]">
                 {heading}
               </h4>
-              <p className={`font-medium text-sm ${descriptionTextColor}`}>
+              <p
+                className={`font-medium text-[0.625rem] ${descriptionTextColor}`}
+              >
                 {description}
               </p>
             </div>
@@ -53,4 +58,4 @@ const PrepTimeCard = () => {
   );
 };
 
-export default PrepTimeCard;
+export default PrepTimeSection;

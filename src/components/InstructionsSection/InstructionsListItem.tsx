@@ -17,7 +17,7 @@ const InstructionsListItem: FunctionComponent<Props> = ({
 
       <p
         dangerouslySetInnerHTML={{ __html: instruction }}
-        className="[&>em]:font-bold [&>em]:not-italic text-base "
+        className="[&>em]:font-bold [&>em]:not-italic lg:text-base text-sm"
       />
     </div>
   );
