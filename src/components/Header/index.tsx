@@ -5,7 +5,7 @@ import PrepTimeSection from "./PrepTimeSection";
 
 const index = () => {
   return (
-    <header className="flex flex-col space-y-3 lg:space-y-11">
+    <header className="flex flex-col space-y-3 md:space-y-6 lg:space-y-11">
       <div className="flex flex-col space-y-3">
         <h1 className="text-2xl font-bold lg:text-5xl font-playfair-display">
           Classic Cheesecake Recipe
