@@ -1,38 +1,9 @@
-import spoonKnifeCrossed from "../../assets/icons/spoonKnifeCrossed.svg";
-import clock from "../../assets/icons/clock.svg";
+import { prepTimeItems } from "./prepTimeItems";
 
 const PrepTimeCard = () => {
-  const cardItems = [
-    {
-      imgSrc: spoonKnifeCrossed,
-      alt: "image of a spoon and knife crossed",
-      heading: "yields",
-      description: "12 servings",
-      descriptionTextColor: "text-primary",
-    },
-    {
-      imgSrc: clock,
-      alt: "image of an analog clock",
-      heading: "prep time",
-      description: "45 minutes",
-    },
-    {
-      imgSrc: clock,
-      alt: "image of an analog clock",
-      heading: "cook time",
-      description: "1 hour",
-    },
-    {
-      imgSrc: clock,
-      alt: "image of an analog clock",
-      heading: "total time",
-      description: "7.75 hours",
-    },
-  ];
-
   return (
     <div className="lg:flex flex-col px-11 py-14 space-y-11 basis-[55%] max-w-[13.5rem] rounded-xl shadow-[0_0_20px_0_rgba(0,0,0,0.1)] h-max hidden">
-      {cardItems.map(
+      {prepTimeItems.map(
         ({
           imgSrc,
           heading,
