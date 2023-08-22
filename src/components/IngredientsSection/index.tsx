@@ -1,5 +1,5 @@
 import Checkbox from "./CheckboxItem";
-import PrepTimeCard from "./PrepTimeCard";
+import PrepTimeCard from "../PrepTimeSection/PrepTimeCard";
 
 const ingredients = [
   {

@@ -1,7 +1,7 @@
 import dots from "../../assets/icons/dots.svg";
 import cakeImage from "../../assets/images/photo1.png";
 
-import PrepTimeSection from "./PrepTimeSection";
+import PrepTimeSection from "../PrepTimeSection/PrepTimeSection";
 
 const index = () => {
   return (
